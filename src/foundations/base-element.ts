@@ -4,15 +4,13 @@ import { createTheme } from './tokens.js';
 
 export class UiElement extends LitElement {
   // 1. Inject global theme tokens and base styles
-  static override styles = createTheme();
+  static override styles = [createTheme()];
 
   // 2. Standardized Properties for ALL components
   @property({ type: String, reflect: true }) theme: 'light' | 'dark' | 'auto' = 'light';
   @property({ type: Boolean, reflect: true }) disabled = false;
   @property({ type: String }) testId: string = '';
-  @property({ attribute: 'aria-label' }) ariaLabel: string | null = null;
   @property({ attribute: 'aria-describedby' }) ariaDescribedBy?: string;
-  @property({ attribute: 'aria-hidden' }) ariaHidden: string | null = null;
 
   // 3. ElementInternals for form association
   // @ts-ignore: TS might not know about `attachInternals`

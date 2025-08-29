@@ -2,7 +2,7 @@ import { css } from 'lit';
 
 export const tokens = {
   color: {
-    primary: { 50: '#f0f9ff', 500: '#0ea5e9', 900: '#0c4a6e' },
+    primary: { 50: '#f0f9ff', 500: '#1e40af', 900: '#0c4a6e' },
     neutral: { 100: '#f3f4f6', 500: '#6b7280', 900: '#111827' },
     success: { 500: '#10b981' },
     error: { 500: '#ef4444' },
@@ -17,7 +17,7 @@ export function createTheme() {
     :host, :root {
       /* Colors */
       --color-primary-50: #f0f9ff;
-      --color-primary-500: #0ea5e9;
+      --color-primary-500: #1e40af;
       --color-primary-900: #0c4a6e;
       --color-neutral-100: #f3f4f6;
       --color-neutral-500: #6b7280;

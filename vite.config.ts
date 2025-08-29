@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'UiLibrary',
-      fileName: (format) => `ui-library.${format}.js`,
+      name: 'LitUIKit',
+      fileName: (format) => `lit-ui-kit.${format}.js`,
       formats: ['es', 'cjs'],
     },
     sourcemap: true,

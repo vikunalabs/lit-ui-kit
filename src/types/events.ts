@@ -4,7 +4,7 @@
  */
 
 export interface UiButtonEventMap {
-  'ui-click': CustomEvent<{ originalTarget: HTMLButtonElement }>;
+  'ui-click': CustomEvent<{ originalEvent: Event; type: string; variant: string }>;
 }
 
 export interface UiInputEventMap {

@@ -34,7 +34,7 @@ export abstract class FormAssociatedElement extends UiElement {
 
   // Method to set validity flags
   protected setValidity(flags: ValidityStateFlags, message?: string): void {
-    const element = this.shadowRoot?.querySelector('input') as HTMLElement;
-    this.internals.setValidity(flags, message, element || undefined);
+    const element = this.shadowRoot?.querySelector('input, textarea, select') as HTMLElement;
+    this.internals.setValidity(flags, message, element || this);
   }
 }
