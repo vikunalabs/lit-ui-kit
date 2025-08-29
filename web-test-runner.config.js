@@ -20,5 +20,6 @@ export default {
       timeout: 3000,
       retries: 1
     }
-  }
+  },
+  testsFinishTimeout: 300000, // 300 seconds = 5 minutes
 };

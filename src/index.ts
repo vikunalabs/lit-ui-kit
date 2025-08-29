@@ -8,4 +8,5 @@ export * from './types/events.js';
 
 // Components
 export { Button } from './components/button/index.js';
-// export { Input } from './components/input/index.js';
+export { Input } from './components/input/index.js';
+export { PasswordInput } from './components/password-input/index.js';
