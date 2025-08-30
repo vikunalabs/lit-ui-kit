@@ -13,3 +13,4 @@ export { PasswordInput } from './components/password-input/index.js';
 export { Checkbox } from './components/checkbox/index.js';
 export { Modal } from './components/modal/index.js';
 export { Alert } from './components/alert/index.js';
+export { Spinner } from './components/spinner/index.js';
