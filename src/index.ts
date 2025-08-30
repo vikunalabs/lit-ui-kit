@@ -10,3 +10,4 @@ export * from './types/events.js';
 export { Button } from './components/button/index.js';
 export { Input } from './components/input/index.js';
 export { PasswordInput } from './components/password-input/index.js';
+export { Checkbox } from './components/checkbox/index.js';
