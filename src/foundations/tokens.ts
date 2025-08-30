@@ -10,6 +10,18 @@ export const tokens = {
   spacing: { xs: '0.25rem', sm: '0.5rem', md: '1rem', lg: '1.5rem' },
   font: { size: { sm: '0.875rem', md: '1rem', lg: '1.125rem' }, family: { body: 'Inter, sans-serif' } },
   borderRadius: { sm: '0.25rem', md: '0.375rem', lg: '0.5rem' },
+  animation: {
+    duration: { 
+      fast: '0.15s', 
+      normal: '0.3s', 
+      slow: '0.5s' 
+    },
+    easing: { 
+      standard: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      emphasized: 'cubic-bezier(0.2, 0, 0, 1)',
+      decelerated: 'cubic-bezier(0, 0, 0.2, 1)'
+    }
+  },
 };
 
 export function createTheme() {
