@@ -85,13 +85,13 @@ this.internals.setValidity(flags, message, element || this);
 Your `package.json` is missing export fields for proper module resolution:
 ```json
 {
-  "main": "./dist/lit-ui-kit.cjs.js",
-  "module": "./dist/lit-ui-kit.es.js",
+  "main": "./dist/lit-ui-library.cjs.js",
+  "module": "./dist/lit-ui-library.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/lit-ui-kit.es.js",
-      "require": "./dist/lit-ui-kit.cjs.js",
+      "import": "./dist/lit-ui-library.es.js",
+      "require": "./dist/lit-ui-library.cjs.js",
       "types": "./dist/index.d.ts"
     }
   }
