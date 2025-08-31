@@ -21,5 +21,5 @@ export default {
       retries: 1
     }
   },
-  testsFinishTimeout: 300000, // 300 seconds = 5 minutes
-};
+  testsFinishTimeout: 60000, // 60 seconds for accessibility tests
+};;

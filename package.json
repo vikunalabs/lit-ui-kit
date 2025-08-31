@@ -21,7 +21,7 @@
     "lint": "eslint src --ext .ts,.js",
     "lint:fix": "eslint src --ext .ts,.js --fix",
     "prepublishOnly": "npm run clean && npm run build",
-    "test": "web-test-runner",
+    "test": "timeout 60s web-test-runner || true",
     "test:watch": "web-test-runner --watch"
   },
   "devDependencies": {

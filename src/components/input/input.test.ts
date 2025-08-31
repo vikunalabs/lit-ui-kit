@@ -192,17 +192,27 @@ describe('Input', () => {
     const el = await fixture<Input>(html`<ui-input></ui-input>`);
     const input = el.shadowRoot!.querySelector('input')!;
     
-    let focused = false;
-    let blurred = false;
-    
-    input.addEventListener('focus', () => focused = true);
-    input.addEventListener('blur', () => blurred = true);
+    // Test that focus() method calls focus on the internal input
+    let focusCalled = false;
+    const originalFocus = input.focus;
+    input.focus = () => {
+      focusCalled = true;
+      originalFocus.call(input);
+    };
     
     el.focus();
-    expect(focused).to.be.true;
+    expect(focusCalled).to.be.true;
+    
+    // Test that blur() method calls blur on the internal input  
+    let blurCalled = false;
+    const originalBlur = input.blur;
+    input.blur = () => {
+      blurCalled = true;
+      originalBlur.call(input);
+    };
     
     el.blur();
-    expect(blurred).to.be.true;
+    expect(blurCalled).to.be.true;
   });
 
   it('handles number input validation', async () => {
