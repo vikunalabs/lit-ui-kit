@@ -240,7 +240,7 @@ export const modalStyles = css`
     }
   }
 
-  /* Dark mode support */
+  /* Optional: Dark mode support (commented out to keep modals light-themed)
   @media (prefers-color-scheme: dark) {
     dialog::backdrop {
       background-color: rgba(0, 0, 0, 0.7);
@@ -265,4 +265,5 @@ export const modalStyles = css`
       color: var(--color-neutral-200, #e5e7eb);
     }
   }
+  */
 `;
